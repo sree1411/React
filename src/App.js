@@ -17,7 +17,7 @@ import TableUser from './Components/_layouts/TableUser';
 export default function App() {
   return (
     <> 
-      <h1> header part of the website </h1>
+
       <Topbar/>
 
      <div className='main'>
