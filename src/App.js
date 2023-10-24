@@ -42,6 +42,7 @@ export default function App() {
     <Footer/>
       
       <h1> footer part of the code in the 1001</h1>
+      <p> 2020 copy right claims to the company</p>
    </>
   )
 }
