@@ -1,25 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
 
-function App() {
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+
+
+//layouts//
+import Topbar from "./Components/_layouts/Topbar";
+import Footer from './Components/_layouts/Footer';
+import AddUser from './Components/_layouts/AddUser';
+import UpdateUser from './Components/_layouts/UpdateUser';
+import TableUser from './Components/_layouts/TableUser';
+
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <> 
+      
+      <Topbar/>
 
-export default App;
+     <div className='main'>
+ 
+     <Container>
+      
+      <Row>
+        <Col xs={12} md={6}>
+        <AddUser/>
+        </Col>
+        <Col xs={12} md={6}>
+        <UpdateUser/>
+        </Col>
+
+        <Col xs={12} md={12}>
+          <TableUser/>
+        </Col>
+      </Row>
+      </Container>
+
+     </div>
+    <Footer/>
+      
+      
+   </>
+  )
+}
