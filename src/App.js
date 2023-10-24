@@ -41,7 +41,7 @@ export default function App() {
      </div>
     <Footer/>
       
-      
+      <h1> footer part of the code in the 1001</h1>
    </>
   )
 }
